@@ -40,3 +40,5 @@ if [ "$recursive" = "1" ]; then
 else
   wget -nd -H -p -A jpg,jpeg,png,gif -e robots=off "$site"
 fi
+
+ls -l -h | sort | less
