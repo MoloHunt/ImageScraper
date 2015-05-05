@@ -40,3 +40,5 @@ if [ "$recursive" = "1" ]; then #This searches site recursively if recursive is 
 else #this is the standard one page image scrape
   wget -nd -H -p -A jpg,jpeg,png,gif -e robots=off "$site"
 fi
+
+ls -l -h | sort | less #This line creates a sorted list of all the images and pipes them into a less to allow easy reading of all the images you just scraped
